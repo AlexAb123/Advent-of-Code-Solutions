@@ -34,7 +34,4 @@ for day in (map(str, range(1, 26))):
         print(f"Created file: Day {day} Input.txt")
         files_created += 1
 
-if files_created == 1:
-    print(f"Created {files_created} day/input file.")
-else:
-    print(f"Created {files_created} day/input files.")
+print(f"Created {files_created} file.") if files_created == 1 else print(f"Created {files_created} files.")
